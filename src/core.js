@@ -498,7 +498,7 @@ $.extend($.validator, {
 
 		errors: function() {
 			var errorClass = this.settings.errorClass.replace(" ", ".");
-			return this.errorContext.find(this.settings.errorElement).filter(""." + errorClass");
+			return this.errorContext.find(this.settings.errorElement).filter("." + errorClass);
 		},
 
 		reset: function() {
